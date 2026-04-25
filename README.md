@@ -1,6 +1,8 @@
 # Installation
 1. Open terminal and navigate to the root directory of the project
-2. Run `pip install -r requirements.txt`
+2. Run `python3 -m venv .venv`
+3. Run `source .venv/bin/activate`
+4. Run `pip install -r requirements.txt`
 
 # Launch Server
 1. Run `uvicorn main:app --reload`
