@@ -10,10 +10,13 @@
 
 # API Reference (CURL Commands)
 ## Add game
-`curl -X POST -H "Content-Type: application/json" -d '{"name":<string>,"completed":<boolean>}' 'http://127.0.0.1:8000/games'`
+`curl -X POST -H "Content-Type: application/json" -d '{"name":<string>,"completed":<boolean>,"priority":<integer>}' 'http://127.0.0.1:8000/games'`
 
 ## Get specific game
 `curl -X GET http://127.0.0.1:8000/games/<integer>`
 
 ## Get list of games
 `curl -X GET 'http://127.0.0.1:8000/games?limit=<integer>'`
+
+## Get list of games sorted by priority
+`curl -X GET 'http://127.0.0.1:8000/games/priority'`
